@@ -94,8 +94,8 @@ button:hover {
     width: calc(
       100% - 40px
     ); /* Full width minus larger padding for more space */
-    padding: 20px; /* Maintain padding for internal spacing */
-    margin: 20px; /* Increase margin to add space around the container */
+    padding: 40px; /* Maintain padding for internal spacing */
+    margin: 40px; /* Increase margin to add space around the container */
     box-shadow: none; /* Optionally remove shadow for a flatter look on mobile */
     border-radius: 10px; /* Slightly reduce border radius for smaller screens */
   }
