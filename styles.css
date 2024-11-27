@@ -87,3 +87,59 @@ button:hover {
   color: #fff;
   margin-top: 10px;
 }
+
+/* Responsive styles */
+@media only screen and (max-width: 600px) {
+  #weather-container {
+    width: calc(100% - 40px); /* Full width minus padding */
+    padding: 15px; /* Reduced padding for smaller screens */
+  }
+
+  h2 {
+    font-size: 24px; /* Adjust heading size */
+  }
+
+  input {
+    width: calc(100% - 16px); /* Full width input */
+    padding: 10px; /* Increased padding for better touch targets */
+  }
+
+  button {
+    width: calc(100% - 16px); /* Full width button */
+    padding: 12px; /* Increased padding for better touch targets */
+    font-size: 16px; /* Larger font size for readability */
+  }
+
+  #weather-icon {
+    width: 150px; /* Smaller icon size on mobile */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  #temp-div div p {
+    font-size: 40px; /* Adjust temperature font size */
+  }
+
+  #weather-info {
+    font-size: 18px; /* Adjust info font size */
+  }
+
+  #hourly-forecast {
+    flex-direction: column; /* Stack hourly items vertically on small screens */
+    overflow-x: hidden; /* Hide horizontal overflow */
+  }
+
+  .hourly-item {
+    margin-bottom: 15px; /* Space between hourly items */
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  #weather-container {
+    width: calc(80% - 40px); /* Slightly reduced width for medium screens */
+  }
+
+  #weather-icon {
+    width: auto; /* Auto size for medium screens */
+    height: auto;
+  }
+}
