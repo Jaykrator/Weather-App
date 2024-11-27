@@ -91,52 +91,56 @@ button:hover {
 /* Responsive styles */
 @media only screen and (max-width: 600px) {
   #weather-container {
-    width: calc(100% - 20px); /* Full width minus a smaller padding */
-    padding: 15px; /* Adjusted padding for better spacing */
-    margin: 10px; /* Add margin to prevent touching the edges */
+    width: calc(
+      100% - 40px
+    ); /* Full width minus larger padding for more space */
+    padding: 20px; /* Maintain padding for internal spacing */
+    margin: 20px; /* Increase margin to add space around the container */
     box-shadow: none; /* Optionally remove shadow for a flatter look on mobile */
     border-radius: 10px; /* Slightly reduce border radius for smaller screens */
   }
 
   h2 {
-    font-size: 24px; /* Adjust heading size */
+    font-size: 24px; /* Adjust heading size for better readability */
   }
 
   input {
-    width: calc(100% - 16px); /* Full width input */
-    padding: 10px; /* Increased padding for better touch targets */
+    font-size: 16px; /* Increase font size for input field */
+    padding: 10px; /* Increase padding for easier touch interaction */
   }
 
   button {
-    width: calc(100% - 16px); /* Full width button */
-    padding: 12px; /* Increased padding for better touch targets */
-    font-size: 16px; /* Larger font size for readability */
+    font-size: 16px; /* Increase button font size */
+    padding: 12px; /* Increase button padding */
+    width: calc(100% - 20px); /* Full width button with margin */
   }
 
   #weather-icon {
-    width: 150px; /* Smaller icon size on mobile */
+    width: 120px; /* Smaller icon size for mobile */
     height: auto; /* Maintain aspect ratio */
   }
 
   #temp-div div p {
-    font-size: 40px; /* Adjust temperature font size */
+    font-size: 32px; /* Adjust temperature font size */
   }
 
   #weather-info {
-    font-size: 18px; /* Adjust info font size */
+    font-size: 16px; /* Adjust info font size */
   }
 
   #hourly-forecast {
-    display: flex; /* Ensure the container is a flex container */
-    flex-direction: row; /* Set items to be arranged horizontally */
+    flex-direction: row; /* Keep items horizontal on small screens */
     overflow-x: auto; /* Allow horizontal scrolling if items overflow */
+    justify-content: space-between; /* Space items evenly */
+    padding-bottom: 10px; /* Add bottom padding for aesthetics */
   }
 
   .hourly-item {
-    margin-bottom: 15px; /* Space between hourly items */
+    flex: none; /* Prevent items from shrinking */
+    width: 60px; /* Set a fixed width for hourly items */
+    margin-right: 5px; /* Space between hourly items */
   }
 }
-
 @media only screen and (min-width: 601px) and (max-width: 768px) {
   #weather-container {
     width: calc(80% - 40px); /* Slightly reduced width for medium screens */
