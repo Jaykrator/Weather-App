@@ -91,8 +91,8 @@ button:hover {
 /* Responsive styles */
 @media only screen and (max-width: 600px) {
   #weather-container {
-    width: calc(100% - 40px); /* Full width minus padding */
-    padding: 15px; /* Reduced padding for smaller screens */
+    width: calc(100% - 30px); /* Full width minus padding */
+    padding: 20px; /* Reduced padding for smaller screens */
   }
 
   h2 {
@@ -124,8 +124,9 @@ button:hover {
   }
 
   #hourly-forecast {
-    flex-direction: column; /* Stack hourly items vertically on small screens */
-    overflow-x: hidden; /* Hide horizontal overflow */
+    display: flex; /* Ensure the container is a flex container */
+    flex-direction: row; /* Set items to be arranged horizontally */
+    overflow-x: auto; /* Allow horizontal scrolling if items overflow */
   }
 
   .hourly-item {
